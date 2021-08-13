@@ -1,0 +1,39 @@
+GET http://localhost:8080/
+
+###
+
+POST http://localhost:8080/
+Content-Type: application/json
+
+{
+  "text": "My humble text",
+  "value": 12345
+}
+
+###
+GET http://localhost:8080/calculator/5/MULTIPLY/5
+
+###
+GET http://localhost:8080/calculator/5/plus/5
+
+###
+GET http://localhost:8080/calculator/0/DIVIDE/0
+
+###
+GET http://localhost:8080/text/getAll
+
+###
+POST http://localhost:8080/text/getByStartingText
+Content-Type: application/json
+
+{
+  "text": "Something"
+}
+
+###
+PUT http://localhost:8080/text/put/1
+Content-Type: application/json
+
+{
+  "text": "Something else"
+}
